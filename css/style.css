@@ -1,0 +1,692 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Sticky Top Bar */
+.top-bar {
+    background-color: #fed20f;
+    color: white;
+    padding: 10px 0;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.top-bar-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;  /* Align items vertically */
+    color: white;
+}
+
+.top-bar-icon {
+    margin-right: 10px;
+    font-size: 20px;  /* Icon size set to 20px */
+}
+
+.top-bar-text p {
+    font-size: 15px;  /* Text size set to 15px */
+    margin: 0;  /* Remove extra margin */
+}
+
+.new_call {
+    color: white;
+    text-decoration: none;  /* Remove underline */
+    font-size: 15px;  /* Link text size set to 15px */
+
+    
+}
+
+.top-bar-item:hover {
+    color: red !important;
+    text-decoration: none;
+}
+
+h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h3 {
+        font-size: 1rem;
+    }
+}
+
+/* Navbar styles */
+/* Custom Toggler Button */
+.navbar-toggler {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    transition: .5s ease-in-out;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+    border: 0;
+    position: relative;
+}
+
+.navbar-toggler span {
+    margin: 0;
+    padding: 0;
+}
+
+.toggler-icon {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #f26921;
+    border-radius: 1px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+/* State when the navbar is collapsed */
+.navbar-toggler.collapsed .bar-1 {
+    top: 0;
+    transform: rotate(0deg);
+}
+
+.navbar-toggler.collapsed .bar-2 {
+    opacity: 1;
+    top: 10px;
+}
+
+.navbar-toggler.collapsed .bar-3 {
+    top: 20px;
+    transform: rotate(0deg);
+}
+
+/* When navigation is clicked */
+.navbar-toggler .bar-1 {
+    top: inherit;
+    transform: rotate(135deg);
+}
+
+.navbar-toggler .bar-2 {
+    opacity: 0;
+    top: inherit;
+}
+
+.navbar-toggler .bar-3 {
+    top: inherit;
+    transform: rotate(-135deg);
+}
+
+/* Offcanvas adjustments */
+.offcanvas {
+    width: 250px;
+}
+
+/* Menu hover and link styles */
+.navbar-nav li a:hover {
+    color: #262872 !important;
+}
+
+/* Dropdown menu styles */
+.dropdown-menu {
+    background: #FFFFFF;
+}
+
+/* Ensure dropdown items match main menu items */
+.dropdown-item {
+    color: #f20505 !important; /* Same color as the main menu items */
+    font-weight: bolder; /* To match the bold style */
+    padding: 10px 20px; /* Same padding as before */
+    transition: all 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+/* Dropdown hover effect to match main menu */
+.dropdown-item:hover {
+    color: #262872 !important; /* Same hover color as main menu items */
+    background-color: #f7f7f7; /* Optional: Add background color on hover */
+    border-radius: 4px; /* Make the link's background slightly rounded */
+}
+
+/* First button styling */
+.btn-primary{
+	background-color: #fed20f !important;
+	border-radius: 30px !important;
+  color: #272b73 !important;
+}
+#first_button {
+    
+}
+
+@media (min-width: 992px) {
+    #first_button {
+        font-size: 1.2rem; /* Slightly larger font for large screens */
+        padding: 10px; /* Adjust padding to make the button more balanced */
+        margin-left: 60px;
+        border: 2px solid #272b73;
+        width: 220px;
+        
+    }
+}
+
+/* Add padding inside the links */
+.nav-link {
+    padding: 10px 15px; /* Adjust these values as necessary */
+    font-weight: bolder;
+    color: #f20505 !important; /* Keep the original color */
+    transition: all 0.3s ease-in-out; /* Smooth hover effect */
+    margin: 0 5px; /* Add space between the links */
+}
+
+/* Hover effect for links */
+.nav-link:hover {
+    color: #262872 !important; /* Change the color on hover */
+    background-color: #f7f7f7; /* Optional: Add background color on hover */
+    border-radius: 4px; /* Make the link's background slightly rounded */
+}
+
+/* Adjust padding in the dropdown items */
+.dropdown-item {
+    padding: 10px 20px; /* Add more space inside dropdown items */
+}
+
+/* hero section :start */
+      /* Adjust hero section height */
+    /* General Background Animation for Large Screens */
+   /* Hero Section */
+      /* General Background Animation for Large Screens */
+/* General Background Animation for Large Screens */
+/* Adjust hero section height */
+
+
+    /* Adjust hero section height */
+/* General Background Animation for Large Screens */
+/* Adjust hero section height */
+/* Adjust hero section height */
+  /* Adjust hero section height */
+      /* Adjust hero section height */
+    /* General Background Animation for Large Screens */
+    /* General Background Animation for Large Screens */
+            /* General Background Animation for Large Screens */
+    /* General Background Animation for Large Screens */
+#hero {
+    position: relative;
+    min-height: 85vh;  /* Full screen height */
+    z-index: 1; /* Ensure hero is behind other elements */
+}
+
+#hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0.85;
+    z-index: -1; /* Lower z-index to ensure it's behind content */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: fadeHeroBg 22.5s infinite;
+}
+
+/* General button styling for both buttons */
+.explore-btn, .register-btn {
+    background-color: #fed20f !important; /* Set background color */
+    color: #f20505 !important;
+    width: 200px;
+    border: 2px solid white !important;
+    
+    
+    padding: 3px !important; /* Add some horizontal padding */
+    border-radius: 20px !important;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center;
+    font-size: 1rem;
+    z-index: 10;
+}
+/* Specific for 'Explore Our Products' button */
+.explore-btn {
+    
+    height: 40px;
+    margin-top: 15px;
+   
+}
+
+/* Specific for 'Get a Quote' button */
+.register-btn {
+    width: 200px;
+    height: 40px;
+    position: absolute;
+    bottom: 100px;
+    right: 80px;
+}
+
+/* Adjust buttons for small screens */
+@media (max-width: 767px) {
+    .explore-btn, .register-btn {
+        width: calc(100% - 40px); /* Full width minus padding for uniform space */
+        margin: 0 20px; /* Uniform space on both sides */
+        
+        z-index: 10;
+    }
+
+    .register-btn {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    #hero::before {
+        display: none; /* Hide large screen background */
+    }
+
+    .small-bg-container {
+        display: block;
+        z-index: -2; /* Background behind content */
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        animation: fadeSmallBg 40s infinite;
+    }
+    .text_d {
+        margin-top: 50px;
+        color: #272b73 !important;
+    }
+
+    .text-set {
+       
+        color: #272b73 !important;
+    }
+
+}
+
+/* Background Animation for Large Screens */
+@keyframes fadeHeroBg {
+    0% { background-image: url('../images/new/c1.jpg'); }
+    30% { background-image: url('../images/new/c2.jpg'); }
+    40% { background-image: url('../images/new/c3.jpg'); }
+    60% { background-image: url('../images/new/c4.jpg'); }
+    80% { background-image: url('../images/new/c5.jpg'); }
+    100% { background-image: url('../images/new/c1.jpg'); }
+}
+
+/* Background Animation for Small Screens */
+@keyframes fadeSmallBg {
+    0% { background-image: url('../images/new/about_2-removebg-preview.png'); }
+    20% { background-image: url('../images/new/about-removebg-preview.png'); }
+    40% { background-image: url('../images/new/Threasher.jpeg'); }
+    60% { background-image: url('../images/new/threasher_2.webp'); }
+    80% { background-image: url('../images/new/about_2-removebg-preview.png'); }
+    100% { background-image: url('../images/new/about_2-removebg-preview.png'); }
+}
+
+
+/* Text Set transitions for smoother switching */
+.text-set {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    color: white;
+}
+
+.text-set.active {
+    opacity: 1;
+}
+
+/* Ensuring text container has higher z-index */
+.col-md-6 {
+    position: relative;
+    z-index: 5;
+}
+
+.text_d {
+    margin-top: 10px;
+    color: white;
+}
+@media (min-width: 768) {
+    .text_d {
+        margin-top: 10px;
+        
+    }
+}
+  
+/* hero section :end */
+
+/* Divider between Hero and About sections */
+
+/* Divider between Hero and About sections */
+   /* Ensure the hero and about sections are positioned relative */
+/* Ensure hero and about sections have position relative */
+#hero, #about {
+    position: relative;
+}
+
+.text_d {
+    
+    display: inline; /* Ensure text stays inline with the cursor */
+}
+
+/* Blinking cursor style */
+.cursor {
+    font-weight: bold;
+    font-size: 2rem;
+    color: white;
+    animation: blink 0.7s step-end infinite;
+}
+
+/* Blinking animation */
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+/* Divider between Hero and About sections */
+
+
+/* Divider styling */
+.divider {
+    background-color: #fed20f;
+    height: 50px; /* Height of the divider */
+    width: 50% !important;   /* 60% of the viewport width */
+    margin: 0 auto; /* Center the divider */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Rounded corners */
+    border: 1px solid white; /* White border with thickness of 5px */
+    position: relative; /* Position relative to the flow of the document */
+    top: -25px; /* Move it upwards to overlap */
+    z-index: 2; /* Higher z-index than sections */
+    font-family: 'Arial', sans-serif;
+    font-weight: 800;
+}
+
+/* Styling the text inside the divider */
+.divider span {
+    font-size: 1.3rem; /* Font size */
+
+    color: #f20505; /* Text color */
+    text-transform: capitalize;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 767px) {
+    .divider {
+        display: none; /* Hide the divider on small screens */
+    }
+}
+
+/* Adjustments for medium and larger screens */
+@media (min-width: 768px) {
+    .divider {
+        height: 50px; /* Height of the divider */
+        width: 60%;   /* Width for medium and larger screens */
+        top: -25px;   /* Position for medium and larger screens */
+    }
+}
+
+
+/* about_section start */
+
+
+/* about_section_end */
+
+
+/* landing ourproducts */
+
+.custom-bg-grey {
+    background-color: #cacadd; /* Replace with your preferred grey color */
+}
+ /* laning end our products */
+
+ /* Custom styles for product divider */
+
+
+/* Other existing CSS rules... */
+.responsive-title {
+    display: block; /* Ensure it's displayed as a block element */
+}
+
+/* Hide the title on medium and larger screens */
+@media (min-width: 768px) {
+    .responsive-title {
+        display: none; /* Hide on medium and larger screens */
+    }
+}
+
+
+/* Testimonial Section Styling */
+    /* Testimonial Section Styling */
+#our-products .card {
+    border: none;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.custom-bg {
+    background-color: #f5dd75;
+}
+
+
+#testimonials {
+    background-color: #ffec98; /* Light background for contrast */
+}
+
+.sec-heading {
+    margin-bottom: 60px;
+}
+
+.single-box {
+    border-radius: 20px;
+    background: #fff;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease; /* Smooth transition */
+    height: 400px; /* Fixed height for portrait cards */
+}
+
+.single-box:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02); /* Slightly enlarge on hover */
+}
+
+.img-area {
+    margin: 20px 0;
+}
+
+.single-box h4 {
+    font-weight: 600;
+    margin: 0;
+    font-family: 'Allura', cursive;
+    font-size: 28px;
+}
+
+.single-box h6 {
+    margin: 10px 0; /* Margin for career */
+    font-weight: 400;
+}
+
+.single-box p {
+    color: #202C45;
+    line-height: 1.6;
+    flex-grow: 1; /* Allow paragraph to grow */
+}
+
+.checked {
+    color: #f20505; /* Red for the stars */
+    font-size: 20px;
+}
+
+/* Adjust for larger screens */
+@media (min-width: 992px) {
+    .single-box {
+        height: 400px; /* Ensure height is consistent for larger screens */
+    }
+}
+
+
+  /* Ensure hidden items don't take space */
+  .carousel-item.d-none {
+      display: none !important;
+  }
+
+  .img-carousel {
+    height: 200px;           /* Set the height */
+    width: auto;           /* Keep the width auto to maintain aspect ratio */
+    max-width: 100%;       /* Ensure it doesn't overflow its container */
+    object-fit: contain;   /* Use 'contain' to maintain the aspect ratio without cropping */
+    margin: 0 auto;     
+}
+
+
+
+
+/*** footer ***start**/
+.footer {
+    position: relative;
+    margin-top: 45px;
+    padding-top: 90px;
+    background: #fed20f;
+
+	
+}
+
+
+.footer .footer-contact,
+.footer .footer-link,
+.footer .footer-newsletter {
+    position: relative;
+    margin-bottom: 45px;
+    color: #ffffff;
+}
+
+.footer .footer-contact h2,
+.footer .footer-link h2,
+.footer .footer-newsletter h2 {
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.footer .footer-link a {
+    display: block;
+    margin-bottom: 10px;
+    color: #ffffff;
+    transition: .3s;
+}
+
+.footer .footer-link a::before {
+    position: relative;
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+.footer .footer-link a:hover {
+    color: #f20505;
+    letter-spacing: 1px;
+}
+
+.footer .footer-contact p i {
+    width: 25px;
+}
+
+#ground_style {
+	font-size: 12px;
+}
+.copyright p {
+	font-size: 12px;
+}
+
+
+
+
+
+
+
+.footer .copyright {
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 45px;
+}
+
+.footer .copyright p {
+    margin: 0;
+    color: #ffffff;
+}
+
+.footer .copyright p a {
+    
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.footer .copyright p a:hover {
+    color: #ffffff;
+}
+
+
+/* for desktop */
+.whatsapp_float {
+	position:fixed;
+	width:45px;
+	height:40px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+        font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+        z-index:100;
+}
+
+.whatsapp-icon {
+	margin-top:20px;
+}
+/* for mobile */
+@media screen and (max-width: 767px){
+     .whatsapp-icon {
+	 margin-top:10px;
+     }
+    .whatsapp_float {
+        width: 35px;
+        height: 30px;
+        bottom: 20px;
+        right: 10px;
+        font-size: 22px;
+    }
+}
+#about_new_paragraphs {
+    color: black;
+
+}
+
+/**/
+
+
+
+/***footer end***/
